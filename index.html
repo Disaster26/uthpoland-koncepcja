@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Używane maszyny CNC, tokarki i centra obróbcze - UTH Poland Jasło</title>
+<meta name="description" content="UTH Poland z Jasła: sprzedaż i skup używanych maszyn CNC - tokarki CNC, centra obróbcze, Doosan, Mazak, Fanuc Robodrill, Hyundai WIA. Wsparcie przed zakupem i transport w Europie. Tel. 530 523 917.">
+<meta name="theme-color" content="#1E242E">
+<link rel="preload" href="fonts/montserrat-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 97 97'%3E%3Cpath d='M16 0H97V83L84 97H0V16Z' fill='%23434242'/%3E%3Cpath d='M0 32H9V54C9 58 11 60 14.5 60S20 58 20 54V32H30V55C30 63 24 67 14.5 67S0 63 0 55ZM31 32H64V41H53V67H43V41H31ZM66 32H77V44H89V32H97V67H89V53H77V67H66Z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:500 700;font-display:swap;src:url(fonts/montserrat-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:500 700;font-display:swap;src:url(fonts/montserrat-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--gr:#434242;--gn:#1E242E;--gn2:#161A21;--zo:#FFC20E;--zo2:#F0B000;--txt:#262A31;--mut:#5A616C;--sz:#F2F3F5;--line:#DDE0E5;--hh:64px;--w:min(calc(100vw - 32px),1240px);--f:14px}
+@media (min-width:980px){:root{--hh:84px;--w:min(calc(100vw - 80px),1240px);--f:22px}}
+@media (min-width:1800px){:root{--w:min(calc(100vw - 160px),1480px)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:var(--hh)}
+body{margin:0;font:17px/1.6 "Manrope",Arial,sans-serif;color:var(--txt);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:"Montserrat",Arial,sans-serif;font-weight:700;line-height:1.1;margin:0;color:var(--gn);letter-spacing:-.01em}
+h2{font-size:clamp(28px,3.8vw,46px)}
+h3{font-size:19px;line-height:1.25}
+p{margin:0}
+.in{width:var(--w);margin:0 auto}
+/* faza: ścięte narożniki jak w znaku UTH */
+.faza{clip-path:polygon(var(--f) 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,0 100%,0 var(--f))}
+.znak{display:inline-block;width:26px;height:26px;flex:none;background:var(--gr);clip-path:polygon(28% 0,100% 0,100% 72%,72% 100%,0 100%,0 28%)}
+.znak.zo{background:var(--zo)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;font:700 16px/1 "Montserrat",Arial,sans-serif;text-decoration:none;border:0;cursor:pointer;white-space:nowrap;--f:10px;clip-path:polygon(var(--f) 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,0 100%,0 var(--f));transition:background .15s}
+.btn-zo{background:var(--zo);color:var(--gn)}
+.btn-zo:hover{background:var(--zo2)}
+.btn-jas{background:#fff;color:var(--gn)}
+.btn-jas:hover{background:#E9EBEE}
+.btn svg{width:19px;height:19px;flex:none}
+/* nagłówek */
+.top{position:fixed;top:0;left:0;right:0;z-index:30;height:var(--hh);background:#fff;box-shadow:0 1px 0 var(--line)}
+.top .in{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--gr)}
+.logo svg{width:40px;height:40px;flex:none}
+.logo span{display:flex;flex-direction:column;font-family:"Montserrat",Arial,sans-serif;line-height:1}
+.logo b{font-size:23px;font-weight:700;letter-spacing:-.01em}
+.logo small{font-size:11.5px;font-weight:500;margin-top:3px}
+@media (min-width:980px){.logo svg{width:50px;height:50px}.logo b{font-size:28px}.logo small{font-size:13px}}
+.menu{display:none}
+.menu a{text-decoration:none;font:600 16px/1 "Montserrat",Arial,sans-serif;color:var(--gn);padding:10px 0;border-bottom:3px solid transparent}
+.menu a:hover{border-color:var(--zo)}
+.menu a.akt{border-color:var(--zo)}
+.top-tel{display:none}
+.burger{width:48px;height:48px;border:0;background:var(--gn);color:#fff;display:grid;place-items:center;cursor:pointer;--f:9px;clip-path:polygon(var(--f) 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,0 100%,0 var(--f))}
+.burger svg{width:22px;height:22px}
+@media (min-width:980px){
+ .menu{display:flex;gap:32px;align-items:center}
+ .top-tel{display:inline-flex;min-height:50px;padding:0 22px}
+ .burger{display:none}
+}
+.lang{font:600 14px/1 "Montserrat",Arial,sans-serif;color:var(--mut);text-decoration:none}
+.panel{position:fixed;inset:var(--hh) 0 auto 0;z-index:29;background:#fff;padding:12px 16px 24px;box-shadow:0 18px 30px rgba(22,26,33,.18);display:none}
+.panel.on{display:block}
+.panel a{display:block;text-decoration:none;font:700 20px/1 "Montserrat",Arial,sans-serif;color:var(--gn);padding:17px 0;border-bottom:1px solid var(--line)}
+.panel .btn{display:flex;margin-top:20px;border:0;font-size:17px}
+/* pierwszy ekran: mozaika zdjęć maszyn + blok w kształcie znaku */
+.hero{position:relative;margin-top:var(--hh);min-height:calc(100svh - var(--hh));display:flex;flex-direction:column;justify-content:flex-end;background:var(--gn)}
+.mozaika{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:3px}
+.mozaika img{width:100%;height:100%;object-fit:cover}
+.mozaika .d{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,26,33,0) 30%,rgba(22,26,33,.55) 100%);pointer-events:none}
+.hero .in{position:relative;z-index:2;padding:0 0 16px}
+.blok{background:var(--gn);color:#fff;padding:24px 20px 22px;max-width:640px;--f:22px}
+.blok h1{color:#fff;font-size:clamp(25px,7vw,30px);line-height:1.12}
+.blok p{color:#C8CDD5;font-size:16px;line-height:1.5;margin-top:12px}
+.blok .cta{display:flex;flex-direction:column;gap:10px;margin-top:24px}
+.blok .cta .btn{width:100%}
+.adr{display:flex;align-items:center;gap:10px;margin-top:16px;font-size:14px;color:#AEB4BE}
+.adr .znak{width:14px;height:14px}
+@media (min-width:700px){
+ .mozaika{grid-template-columns:repeat(3,1fr);grid-template-rows:1fr}
+ .mozaika .t{display:none}.mozaika .d{display:block}
+ .hero .in{padding:0 0 clamp(28px,5vh,64px)}
+ .blok{padding:clamp(30px,3.2vw,46px);--f:34px}
+ .blok h1{font-size:clamp(32px,3.6vw,52px)}
+ .blok p{font-size:18px;margin-top:18px;max-width:52ch}
+ .blok .cta{flex-direction:row;flex-wrap:wrap;gap:12px;margin-top:30px}
+ .blok .cta .btn{width:auto}
+}
+@media (min-width:1600px){.blok{max-width:720px}}
+/* sekcje */
+.sek{padding:clamp(56px,8vw,110px) 0}
+.sz{background:var(--sz)}
+.glowka{display:flex;flex-direction:column;gap:14px;margin-bottom:clamp(26px,3.5vw,44px)}
+.glowka .rz{display:flex;align-items:center;gap:14px}
+.glowka p{color:var(--mut);max-width:64ch;font-size:clamp(16px,1.4vw,18px)}
+/* maszyny */
+.zakladki{display:flex;gap:8px;margin-bottom:22px;overflow-x:auto;scrollbar-width:none}
+.zakladki::-webkit-scrollbar{display:none}
+.zak{flex:none;border:2px solid var(--gn);background:#fff;color:var(--gn);font:700 15px/1 "Montserrat",Arial,sans-serif;min-height:48px;padding:0 20px;cursor:pointer;--f:9px;clip-path:polygon(var(--f) 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,0 100%,0 var(--f))}
+.zak[aria-selected=true]{background:var(--gn);color:#fff}
+.zak span{color:var(--zo2);margin-left:6px}
+@media (max-width:420px){.zak{font-size:14px;padding:0 14px}}
+.zak[aria-selected=true] span{color:var(--zo)}
+.tor-wrap{position:relative}
+.tor{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;cursor:grab;overscroll-behavior-x:contain}
+.tor::-webkit-scrollbar{display:none}
+.tor.ciag{cursor:grabbing;scroll-snap-type:none}
+.tor[hidden]{display:none}
+.karta{flex:none;width:78vw;max-width:320px;scroll-snap-align:start;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);padding:0 0 20px;--f:20px;clip-path:polygon(var(--f) 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,0 100%,0 var(--f))}
+.karta-foto{aspect-ratio:4/3;background:var(--sz);overflow:hidden}
+.karta-foto img{width:100%;height:100%;object-fit:cover;user-select:none;-webkit-user-drag:none}
+.karta h3{margin:18px 20px 0}
+.karta .meta{margin:6px 20px 0;font-size:14.5px;font-weight:700;color:var(--gr)}
+.karta ul{margin:12px 20px 18px;padding:0;list-style:none;font-size:15px;color:var(--mut);flex:1}
+.karta li{padding:7px 0;border-top:1px solid var(--line)}
+.btn-karta{margin:0 20px;background:var(--gn);color:#fff;min-height:48px;font-size:15px}
+.btn-karta:hover{background:#2B3340}
+@media (min-width:700px){.karta{width:calc((100% - 18px)/2)}}
+@media (min-width:1100px){.karta{width:calc((100% - 54px)/4);max-width:none}}
+.strz{display:none}
+@media (min-width:980px){
+ .strz{display:flex;gap:8px;position:absolute;right:0;top:-70px}
+ .strz button{width:52px;height:52px;border:0;background:var(--gn);color:#fff;cursor:pointer;display:grid;place-items:center;--f:10px;clip-path:polygon(var(--f) 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,0 100%,0 var(--f))}
+ .strz button:hover{background:#2B3340}
+ .strz button:disabled{background:#C7CBD2;cursor:default}
+ .strz svg{width:22px;height:22px}
+}
+.inne{margin-top:28px;display:flex;gap:14px;align-items:flex-start;color:var(--mut);max-width:80ch}
+.inne .znak{width:16px;height:16px;margin-top:5px}
+.inne a{color:var(--gn);font-weight:700}
+/* firma */
+.firma{display:grid;gap:30px;align-items:center}
+.firma-foto{position:relative}
+.firma-foto img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.firma h2{margin-bottom:18px}
+.firma p+p{margin-top:14px}
+.punkty{margin:26px 0 0;padding:0;list-style:none;display:grid;gap:0}
+.punkty li{display:grid;grid-template-columns:20px 1fr;gap:14px;padding:16px 0;border-top:1px solid var(--line)}
+.punkty .znak{width:18px;height:18px;margin-top:4px}
+.punkty b{display:block;font-family:"Montserrat",Arial,sans-serif;color:var(--gn);font-size:17px}
+.punkty span{color:var(--mut);font-size:16px}
+@media (min-width:980px){.firma{grid-template-columns:1fr 1fr;gap:64px}.firma-foto{--f:34px}}
+/* skup */
+.skup{background:var(--gn);color:#C8CDD5}
+.skup h2{color:#fff}
+.skup-uk{display:grid;gap:34px}
+.skup-foto img{width:100%;aspect-ratio:2/1;object-fit:cover}
+.skup .lead{font-size:clamp(16px,1.4vw,18px);margin-top:16px}
+.lista{margin:24px 0 0;padding:0;list-style:none}
+.lista li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid #333B48;color:#E3E6EA}
+.lista .znak{width:14px;height:14px;margin-top:6px}
+.form{background:#fff;color:var(--txt);padding:24px 20px;--f:22px}
+.form h3{font-size:22px;margin-bottom:16px}
+.pola{display:grid;gap:12px}
+.form label{display:block;font-size:13.5px;font-weight:700;color:var(--gn);margin-bottom:5px}
+.form input,.form textarea,.form select{width:100%;font:16px/1.4 "Manrope",Arial,sans-serif;color:var(--txt);border:1px solid #C9CED6;background:#fff;padding:12px 14px;border-radius:0}
+.form input:focus,.form textarea:focus{outline:2px solid var(--zo2);outline-offset:0;border-color:var(--zo2)}
+.form textarea{min-height:96px;resize:vertical}
+.form .btn{width:100%;margin-top:18px}
+.plik{position:relative;display:flex;align-items:center;gap:12px;border:1px dashed #AEB4BE;padding:10px 12px;cursor:pointer;font-size:15px;color:var(--mut)}
+.plik b{flex:none;background:var(--sz);color:var(--gn);font:700 14px/1 "Montserrat",Arial,sans-serif;padding:11px 14px}
+.plik input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.plik:focus-within{outline:2px solid var(--zo2)}
+.form .info{font-size:14px;color:var(--mut);margin-top:12px}
+.form .ok{display:none;margin-top:12px;padding:12px 14px;background:var(--sz);font-size:15px;color:var(--gn)}
+.form .ok.on{display:block}
+@media (min-width:560px){.pola{grid-template-columns:1fr 1fr}.pola .cale{grid-column:1/-1}}
+@media (min-width:980px){.skup-uk{grid-template-columns:1fr 1.05fr;gap:64px;align-items:start}.form{padding:36px;--f:30px}}
+/* kontakt */
+.kontakt{display:grid;gap:26px}
+.tele{display:grid;gap:14px}
+.tel{display:flex;flex-direction:column;gap:6px;padding:22px 22px 20px;background:var(--sz);text-decoration:none;--f:18px}
+.tel small{font-size:14px;color:var(--mut);font-weight:600}
+.tel b{font:700 clamp(24px,2.4vw,30px)/1.1 "Montserrat",Arial,sans-serif;color:var(--gn)}
+.tel:hover{background:#E7E9ED}
+.dane{display:grid;gap:18px;font-size:16px}
+.dane b{display:block;color:var(--gn);font-family:"Montserrat",Arial,sans-serif}
+.dane a{color:var(--gn);font-weight:700}
+.mapa{background:var(--sz);min-height:300px;--f:26px}
+.mapa iframe{display:block;width:100%;height:100%;min-height:300px;border:0}
+@media (min-width:700px){.tele{grid-template-columns:1fr 1fr}.dane{grid-template-columns:1fr 1fr}}
+@media (min-width:980px){.kontakt{grid-template-columns:1fr 1fr;gap:56px;align-items:stretch}}
+/* stopka */
+.stopka{background:var(--gn2);color:#AEB4BE;font-size:15px;padding:44px 0 26px}
+.stopka .logo{color:#fff}
+.st-g{display:grid;grid-template-columns:1fr 1fr;gap:26px 20px}
+.st-g .pierw{grid-column:1/-1}
+.stopka h4{margin:0 0 10px;font:700 15px/1.2 "Montserrat",Arial,sans-serif;color:#fff}
+.stopka ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.st-d{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;border-top:1px solid #2A313C;margin-top:32px;padding-top:20px;font-size:14px}
+@media (min-width:980px){.st-g{grid-template-columns:1.4fr 1fr 1fr 1fr}.st-g .pierw{grid-column:auto}}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="in">
+  <a class="logo" href="#" aria-label="UTH Poland - strona główna">
+   <svg viewBox="0 0 97 97" aria-hidden="true"><path d="M16 0H97V83L84 97H0V16Z" fill="currentColor"/><path d="M0 32H9V54C9 58 11 60 14.5 60S20 58 20 54V32H30V55C30 63 24 67 14.5 67S0 63 0 55ZM31 32H64V41H53V67H43V41H31ZM66 32H77V44H89V32H97V67H89V53H77V67H66Z" fill="#fff"/></svg>
+   <span><b>Poland</b><small>CNC Machines</small></span>
+  </a>
+  <nav class="menu" aria-label="Menu główne">
+   <a href="#maszyny" class="akt">Maszyny</a>
+   <a href="#skup">Skup maszyn</a>
+   <a href="#firma">O firmie</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="lang" href="#" lang="en" title="English version">EN</a>
+  </nav>
+  <a class="btn btn-zo top-tel" href="tel:+48530523917"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="bevel"><path d="M5 3h4l2 5-3 2c1 2.5 3.5 5 6 6l2-3 5 2v4l-2 2C10 21 3 14 3 5z"/></svg>530 523 917</a>
+  <button class="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 6h18M3 12h18M3 18h12"/></svg></button>
+ </div>
+</header>
+<nav class="panel" id="panel" aria-label="Menu mobilne">
+ <a href="#maszyny">Maszyny na sprzedaż</a>
+ <a href="#skup">Skup maszyn</a>
+ <a href="#firma">O firmie</a>
+ <a href="#kontakt">Kontakt</a>
+ <a href="#" lang="en">English</a>
+ <a class="btn btn-zo" href="tel:+48530523917">Zadzwoń: 530 523 917</a>
+</nav>
+
+<main>
+<section class="hero">
+ <div class="mozaika" aria-hidden="true">
+  <img class="d" src="img/hero-h1-900.webp" srcset="img/hero-h1-600.webp 600w, img/hero-h1-900.webp 900w" sizes="34vw" width="900" height="1200" alt="" fetchpriority="high">
+  <img class="d" src="img/hero-h2-900.webp" srcset="img/hero-h2-600.webp 600w, img/hero-h2-900.webp 900w" sizes="34vw" width="900" height="1200" alt="">
+  <img class="d" src="img/hero-h3-900.webp" srcset="img/hero-h3-600.webp 600w, img/hero-h3-900.webp 900w" sizes="34vw" width="900" height="1200" alt="">
+  <img class="t" src="img/tel-t1.webp" width="600" height="1200" alt="" fetchpriority="high">
+  <img class="t" src="img/tel-t2.webp" width="600" height="1200" alt="">
+  <img class="t" src="img/tel-t3.webp" width="600" height="1200" alt="">
+  <img class="t" src="img/tel-t4.webp" width="600" height="1200" alt="">
+ </div>
+ <div class="in">
+  <div class="blok faza">
+   <h1>Używane maszyny CNC&nbsp;- tokarki i centra obróbcze gotowe do dalszej pracy</h1>
+   <p>Sprzedajemy i skupujemy maszyny przemysłowe z całej Europy. Pomagamy przed zakupem i organizujemy transport.</p>
+   <div class="cta">
+    <a class="btn btn-zo" href="#maszyny">Zobacz maszyny na sprzedaż</a>
+    <a class="btn btn-jas" href="tel:+48530523917"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="bevel"><path d="M5 3h4l2 5-3 2c1 2.5 3.5 5 6 6l2-3 5 2v4l-2 2C10 21 3 14 3 5z"/></svg>530 523 917</a>
+   </div>
+   <p class="adr"><span class="znak zo"></span>UTH Poland, ul. Towarowa 29, Jasło</p>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="maszyny">
+ <div class="in">
+  <div class="glowka">
+   <div class="rz"><span class="znak"></span><h2>Maszyny na sprzedaż</h2></div>
+   <p>Aktualne tokarki CNC i centra obróbcze. Przy każdej maszynie rok produkcji, sterowanie i najważniejsze parametry. O stan, godziny pracy i dostępność najlepiej zapytać telefonicznie.</p>
+  </div>
+  <div class="zakladki" role="tablist" aria-label="Rodzaj maszyn">
+   <button class="zak" type="button" role="tab" aria-selected="true" aria-controls="tor-t" id="zak-t">Tokarki CNC<span>12</span></button>
+   <button class="zak" type="button" role="tab" aria-selected="false" aria-controls="tor-c" id="zak-c">Centra obróbcze<span>12</span></button>
+  </div>
+  <div class="tor-wrap">
+   <div class="strz"><button type="button" class="wstecz" aria-label="Poprzednie maszyny"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" class="dalej" aria-label="Następne maszyny"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 5l7 7-7 7"/></svg></button></div>
+   <div class="tor" id="tor-t" role="tabpanel" aria-labelledby="zak-t">
+<article class="karta">
+<div class="karta-foto"><img decoding="async" src="img/m-cmz-480.webp" srcset="img/m-cmz-480.webp 480w, img/m-cmz-800.webp 800w, img/m-cmz-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="CMZ TA 30 - używana maszyna CNC"></div>
+<h3>CMZ TA 30</h3>
+<p class="meta">2017 · Fanuc 32i, Manual Guide</p>
+<ul><li>Uchwyt 315 mm SMW Autoblok</li><li>Przejazd osi Z 1100 mm</li><li>Średnica toczenia do 460 mm</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img decoding="async" src="img/m-puma300-480.webp" srcset="img/m-puma300-480.webp 480w, img/m-puma300-800.webp 800w, img/m-puma300-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Doosan Puma 300MC - używana maszyna CNC"></div>
+<h3>Doosan Puma 300MC</h3>
+<p class="meta">2007 · Fanuc 21iTB, Manual Guide</p>
+<ul><li>Oś C, narzędzia napędzane</li><li>Uchwyt 12&quot; (315 mm)</li><li>Przelot wrzeciona 102 mm</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img decoding="async" src="img/m-p2600sy-480.webp" srcset="img/m-p2600sy-480.webp 480w, img/m-p2600sy-800.webp 800w, img/m-p2600sy-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="DN Solutions Puma 2600SY II - używana maszyna CNC"></div>
+<h3>DN Solutions Puma 2600SY II</h3>
+<p class="meta">2022 · instalacja 02.2023</p>
+<ul><li>Średnica toczenia 376 mm</li><li>Długość toczenia 760 mm</li><li>Masa 6 550 kg</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-l400mc-480.webp" srcset="img/m-l400mc-480.webp 480w, img/m-l400mc-800.webp 800w, img/m-l400mc-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Hyundai WIA L400MC - używana maszyna CNC"></div>
+<h3>Hyundai WIA L400MC</h3>
+<p class="meta">2018 · Fanuc 32i model B</p>
+<ul><li>Toczenie Ø560 x 1180 mm</li><li>Uchwyt 15&quot; (381 mm)</li><li>Moc wrzeciona 37/30 kW</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-haas-480.webp" srcset="img/m-haas-480.webp 480w, img/m-haas-800.webp 800w, img/m-haas-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Haas ST-20Y - używana maszyna CNC"></div>
+<h3>Haas ST-20Y</h3>
+<p class="meta">2018 · oś Y i oś C</p>
+<ul><li>Głowica 24 poz. BMT65</li><li>Konik programowalny</li><li>Sonda narzędziowa</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-p2600y-480.webp" srcset="img/m-p2600y-480.webp 480w, img/m-p2600y-800.webp 800w, img/m-p2600y-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="DN Solutions Puma 2600YII - używana maszyna CNC"></div>
+<h3>DN Solutions Puma 2600YII</h3>
+<p class="meta">2022 · Fanuc i Series Plus</p>
+<ul><li>Oś Y</li><li>Średnica toczenia 376 mm</li><li>Moc wrzeciona 22 kW</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-hd2600y-480.webp" srcset="img/m-hd2600y-480.webp 480w, img/m-hd2600y-800.webp 800w, img/m-hd2600y-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Hyundai WIA HD2600Y - używana maszyna CNC"></div>
+<h3>Hyundai WIA HD2600Y</h3>
+<p class="meta">Fanuc i, Manual Guide</p>
+<ul><li>Oś Y, głowica BMT55</li><li>Uchwyt 250 mm, przelot 81 mm</li><li>Toczenie Ø300 x 610 mm</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-qtn-480.webp" srcset="img/m-qtn-480.webp 480w, img/m-qtn-800.webp 800w, img/m-qtn-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Mazak QTN 200 II MSY - używana maszyna CNC"></div>
+<h3>Mazak QTN 200 II MSY</h3>
+<p class="meta">2007 · oś Y, przeciwwrzeciono</p>
+<ul><li>Średnica toczenia 380 mm</li><li>Pręt do 65 mm</li><li>Łapacz detalu, sonda</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-leo-480.webp" srcset="img/m-leo-480.webp 480w, img/m-leo-800.webp 800w, img/m-leo-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Doosan LEO 1600 - używana maszyna CNC"></div>
+<h3>Doosan LEO 1600</h3>
+<p class="meta">2022</p>
+<ul><li>Średnica toczenia 320 mm</li><li>Długość toczenia 303 mm</li><li>Pręt do 45 mm</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-s280n-480.webp" srcset="img/m-s280n-480.webp 480w, img/m-s280n-800.webp 800w, img/m-s280n-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Doosan S280N - używana maszyna CNC"></div>
+<h3>Doosan S280N</h3>
+<p class="meta">2006 · Fanuc 0i Mate TB</p>
+<ul><li>Uchwyt 210 mm (8&quot;)</li><li>Głowica 10 pozycji</li><li>Przenośnik wiórów</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-vturn08-480.webp" srcset="img/m-vturn08-480.webp 480w, img/m-vturn08-800.webp 800w, img/m-vturn08-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Victor Taichung V-Turn 26 - używana maszyna CNC"></div>
+<h3>Victor Taichung V-Turn 26</h3>
+<p class="meta">2008 · Fanuc i Series</p>
+<ul><li>Uchwyt 250 mm</li><li>Oś Z 600 mm</li><li>Konik, sonda narzędziowa</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-vturn98-480.webp" srcset="img/m-vturn98-480.webp 480w, img/m-vturn98-800.webp 800w, img/m-vturn98-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Victor Taichung V-Turn 26 - używana maszyna CNC"></div>
+<h3>Victor Taichung V-Turn 26</h3>
+<p class="meta">1998 · Fanuc OT</p>
+<ul><li>Uchwyt 250 mm, przelot 76 mm</li><li>Długość toczenia 600 mm</li><li>Głowica 10 narzędzi</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+   </div>
+   <div class="tor" id="tor-c" role="tabpanel" aria-labelledby="zak-c" hidden>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-mikron-480.webp" srcset="img/m-mikron-480.webp 480w, img/m-mikron-800.webp 800w, img/m-mikron-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Mikron VCE 1000 Pro - używana maszyna CNC"></div>
+<h3>Mikron VCE 1000 Pro</h3>
+<p class="meta">2016 · Heidenhain TNC 620</p>
+<ul><li>X/Y/Z 1000/560/600 mm</li><li>HSK63, 16 000 obr./min</li><li>Magazyn 40 narzędzi</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-d21-480.webp" srcset="img/m-d21-480.webp 480w, img/m-d21-800.webp 800w, img/m-d21-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Fanuc Robodrill α-D21LiA5 - używana maszyna CNC"></div>
+<h3>Fanuc Robodrill α-D21LiA5</h3>
+<p class="meta">Fanuc 31i, 4. oś</p>
+<ul><li>X/Y/Z 700/400/330 mm</li><li>BT30, 21 narzędzi</li><li>6 400 godzin pracy</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-t21-480.webp" srcset="img/m-t21-480.webp 480w, img/m-t21-800.webp 800w, img/m-t21-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Fanuc Robodrill α-T21iFa - używana maszyna CNC"></div>
+<h3>Fanuc Robodrill α-T21iFa</h3>
+<p class="meta">2009 · Fanuc 31i, 5 osi</p>
+<ul><li>Stół obrotowy Nikken</li><li>24 000 obr./min</li><li>X/Y/Z 500/400/330 mm</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-awea-480.webp" srcset="img/m-awea-480.webp 480w, img/m-awea-800.webp 800w, img/m-awea-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Awea FCV-620 - używana maszyna CNC"></div>
+<h3>Awea FCV-620</h3>
+<p class="meta">2017 · Fanuc 0i-MF, 5 osi</p>
+<ul><li>Stół Ø650 mm</li><li>12 000 obr./min, IKZ</li><li>2 sondy Renishaw</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-feeler-480.webp" srcset="img/m-feeler-480.webp 480w, img/m-feeler-800.webp 800w, img/m-feeler-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Feeler NBP-1300A - używana maszyna CNC"></div>
+<h3>Feeler NBP-1300A</h3>
+<p class="meta">2012 · Heidenhain TNC 530</p>
+<ul><li>X/Y/Z 1300/610/600 mm</li><li>Stół 1500 x 600 mm</li><li>BT40, 12 000 obr./min</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-hp5100-480.webp" srcset="img/m-hp5100-480.webp 480w, img/m-hp5100-800.webp 800w, img/m-hp5100-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Doosan HP 5100 II - używana maszyna CNC"></div>
+<h3>Doosan HP 5100 II</h3>
+<p class="meta">2014 · Fanuc 31i, poziome</p>
+<ul><li>Wymiana palet, stół 500 x 500</li><li>Magazyn 60 narzędzi</li><li>14 000 obr./min</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-nexus-480.webp" srcset="img/m-nexus-480.webp 480w, img/m-nexus-800.webp 800w, img/m-nexus-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Mazak Nexus VCN 410A - używana maszyna CNC"></div>
+<h3>Mazak Nexus VCN 410A</h3>
+<p class="meta">2003</p>
+<ul><li>X/Y/Z 560/410/508 mm</li><li>Magazyn 30 narzędzi</li><li>12 000 obr./min</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-vtc-480.webp" srcset="img/m-vtc-480.webp 480w, img/m-vtc-800.webp 800w, img/m-vtc-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Mazak VTC-200B II - używana maszyna CNC"></div>
+<h3>Mazak VTC-200B II</h3>
+<p class="meta">2004</p>
+<ul><li>X/Y/Z 1120/510/510 mm</li><li>Stół 1460 x 510 mm</li><li>IKZ, 30 narzędzi</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-quaser-480.webp" srcset="img/m-quaser-480.webp 480w, img/m-quaser-800.webp 800w, img/m-quaser-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Quaser MV184 P - używana maszyna CNC"></div>
+<h3>Quaser MV184 P</h3>
+<p class="meta">2012 · 3 osie</p>
+<ul><li>X/Y/Z 1020/610/610 mm</li><li>Stół 1200 x 600 mm</li><li>Sonda Renishaw OMP40</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-kiwa-480.webp" srcset="img/m-kiwa-480.webp 480w, img/m-kiwa-800.webp 800w, img/m-kiwa-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Kiwa KH-45 - używana maszyna CNC"></div>
+<h3>Kiwa KH-45</h3>
+<p class="meta">2007 · Fanuc 31i, poziome 4 osie</p>
+<ul><li>X/Y/Z 640/610/680 mm</li><li>Magazyn 60 narzędzi</li><li>BT40, 12 000 obr./min</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-dmu-480.webp" srcset="img/m-dmu-480.webp 480w, img/m-dmu-800.webp 800w, img/m-dmu-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Deckel Maho DMU 60T - używana maszyna CNC"></div>
+<h3>Deckel Maho DMU 60T</h3>
+<p class="meta">Heidenhain 426</p>
+<ul><li>Magazyn 25 narzędzi SK40</li><li>Maszyna sprawna</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+<article class="karta">
+<div class="karta-foto"><img loading="lazy" decoding="async" src="img/m-intos-480.webp" srcset="img/m-intos-480.webp 480w, img/m-intos-800.webp 800w, img/m-intos-1200.webp 1200w" sizes="(min-width:1100px) 300px, (min-width:700px) 40vw, 78vw" width="480" height="360" alt="Intos FNG CNC - używana maszyna CNC"></div>
+<h3>Intos FNG CNC</h3>
+<p class="meta">Heidenhain TNC 310</p>
+<ul><li>Frezarka narzędziowa CNC</li></ul>
+<a class="btn btn-karta" href="tel:+48664729906">Zapytaj o maszynę</a>
+</article>
+   </div>
+  </div>
+  <p class="inne"><span class="znak zo"></span><span>W ofercie są też uchwyty Kitagawa, projektor pomiarowy Mitutoyo PJ300, walce Picot i inne maszyny. Nie widzisz tego, czego szukasz? <a href="tel:+48664729906" style="white-space:nowrap">Zadzwoń: 664 729 906</a>, sprawdzimy u naszych dostawców.</span></p>
+ </div>
+</section>
+
+<section class="sek sz" id="firma">
+ <div class="in firma">
+  <div class="firma-foto faza"><img loading="lazy" decoding="async" src="img/firma-800.webp" srcset="img/firma-800.webp 800w, img/firma-1200.webp 1200w" sizes="(min-width:980px) 50vw, 100vw" width="1200" height="900" alt="Centrum obróbcze w hali UTH Poland w Jaśle"></div>
+  <div>
+   <h2>Ponad 25 lat w handlu maszynami</h2>
+   <p>Specjalizujemy się w sprzedaży używanych maszyn przemysłowych. Szukamy sprzętu o niskim zużyciu, utrzymanego zgodnie z najwyższymi standardami, a z dostawcami współpracujemy w całej Europie.</p>
+   <ul class="punkty">
+    <li><span class="znak"></span><div><b>Wsparcie przed zakupem</b><span>Pomożemy dobrać maszynę do Twojej produkcji i odpowiemy na pytania o stan i wyposażenie.</span></div></li>
+    <li><span class="znak"></span><div><b>Serwis</b><span>Zapewniamy serwis maszyn kupionych u nas.</span></div></li>
+    <li><span class="znak"></span><div><b>Transport w Polsce i Europie</b><span>Organizujemy transport i wysyłkę do dowolnego kraju w Europie.</span></div></li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="sek skup" id="skup">
+ <div class="in skup-uk">
+  <div>
+   <h2>Sprzedaj nam swoją maszynę</h2>
+   <p class="lead">Masz maszyny, które zajmują miejsce w hali produkcyjnej? Kupujemy maszyny przemysłowe, głównie tokarki CNC, centra obróbcze CNC i piły. Opisz maszynę w formularzu, a my oddzwonimy z propozycją.</p>
+   <ul class="lista">
+    <li><span class="znak zo"></span>marka, model i typ maszyny</li>
+    <li><span class="znak zo"></span>rok produkcji albo liczba godzin pracy</li>
+    <li><span class="znak zo"></span>województwo lub kraj, w którym stoi maszyna</li>
+    <li><span class="znak zo"></span>jeśli możesz, zdjęcie maszyny</li>
+   </ul>
+   <div class="skup-foto faza" style="margin-top:30px"><img loading="lazy" decoding="async" src="img/skup-800.webp" srcset="img/skup-800.webp 800w, img/skup-1200.webp 1200w" sizes="(min-width:980px) 45vw, 100vw" width="1200" height="600" alt="Uzgodnienie sprzedaży maszyny w hali produkcyjnej"></div>
+  </div>
+  <form class="form faza" id="form-skup" novalidate>
+   <h3>Opisz maszynę</h3>
+   <div class="pola">
+    <div><label for="f-marka">Marka</label><input id="f-marka" name="marka" autocomplete="off"></div>
+    <div><label for="f-model">Model</label><input id="f-model" name="model" autocomplete="off"></div>
+    <div><label for="f-typ">Typ maszyny</label><input id="f-typ" name="typ" placeholder="np. tokarka CNC" autocomplete="off"></div>
+    <div><label for="f-rok">Rok / godziny pracy</label><input id="f-rok" name="rok" autocomplete="off"></div>
+    <div><label for="f-woj">Województwo / kraj</label><input id="f-woj" name="woj" autocomplete="off"></div>
+    <div><label for="f-tel">Telefon</label><input id="f-tel" name="tel" type="tel" autocomplete="tel"></div>
+    <div class="cale"><label for="f-mail">E-mail</label><input id="f-mail" name="mail" type="email" autocomplete="email"></div>
+    <div class="cale"><label for="f-zdj">Zdjęcie maszyny</label><div class="plik"><b>Dodaj zdjęcie</b><span id="f-zdj-n">nie wybrano pliku</span><input id="f-zdj" name="zdj" type="file" accept="image/*"></div></div>
+    <div class="cale"><label for="f-tresc">Wiadomość</label><textarea id="f-tresc" name="tresc"></textarea></div>
+   </div>
+   <button class="btn btn-zo" type="submit">Wyślij opis maszyny</button>
+   <p class="ok" role="status">To podgląd strony - formularz zacznie wysyłać zgłoszenia na docelowej stronie.</p>
+  </form>
+ </div>
+</section>
+
+<section class="sek" id="kontakt">
+ <div class="in kontakt">
+  <div>
+   <div class="glowka"><div class="rz"><span class="znak"></span><h2>Kontakt</h2></div><p>Zadzwoń albo napisz. Maszynę można obejrzeć na miejscu w Jaśle.</p></div>
+   <div class="tele">
+    <a class="tel faza" href="tel:+48530523917"><small>Maszyny CNC</small><b>530 523 917</b></a>
+    <a class="tel faza" href="tel:+48664729906"><small>Maszyny</small><b>664 729 906</b></a>
+   </div>
+   <div class="dane" style="margin-top:26px">
+    <p><b>E-mail</b><a href="mailto:uthpoland@gmail.com">uthpoland@gmail.com</a></p>
+    <p><b>Adres</b>ul. Towarowa 29<br>38-200 Jasło</p>
+    <p><b>UTH Poland Przemysław Czajkowski</b>NIP 685 217 07 76</p>
+    <p><b>UTH Adam Czajkowski</b>NIP 685 133 04 27</p>
+   </div>
+  </div>
+  <div class="mapa faza" id="mapa" data-src="https://maps.google.com/maps?q=Towarowa%2029%2C%2038-200%20Jas%C5%82o&amp;z=15&amp;output=embed"></div>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="in">
+  <div class="st-g">
+   <div class="pierw">
+    <a class="logo" href="#" aria-label="UTH Poland">
+     <svg viewBox="0 0 97 97" aria-hidden="true"><path d="M16 0H97V83L84 97H0V16Z" fill="currentColor"/><path d="M0 32H9V54C9 58 11 60 14.5 60S20 58 20 54V32H30V55C30 63 24 67 14.5 67S0 63 0 55ZM31 32H64V41H53V67H43V41H31ZM66 32H77V44H89V32H97V67H89V53H77V67H66Z" fill="#161A21"/></svg>
+     <span><b>Poland</b><small>CNC Machines</small></span>
+    </a>
+    <p style="margin-top:14px;max-width:34ch">Sprzedaż i skup używanych maszyn CNC. ul. Towarowa 29, 38-200 Jasło.</p>
+   </div>
+   <div><h4>Maszyny</h4><ul><li><a href="#maszyny">Tokarki CNC</a></li><li><a href="#maszyny">Centra obróbcze CNC</a></li><li><a href="#maszyny">Narzędzia i inne</a></li></ul></div>
+   <div><h4>Firma</h4><ul><li><a href="#skup">Skup maszyn</a></li><li><a href="#firma">O firmie</a></li><li><a href="#">RODO</a></li><li><a href="https://www.facebook.com/MaszynyPrzemyslowe-532829383859805" rel="noopener">Facebook</a></li></ul></div>
+   <div><h4>Kontakt</h4><ul><li><a href="tel:+48530523917">530 523 917</a></li><li><a href="tel:+48664729906">664 729 906</a></li><li><a href="mailto:uthpoland@gmail.com">uthpoland@gmail.com</a></li></ul></div>
+  </div>
+  <div class="st-d">
+   <span>© 2026 UTH Poland</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=uthpoland.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+
+<script>
+(function(){
+ var b=document.querySelector('.burger'),p=document.getElementById('panel');
+ b.addEventListener('click',function(){var on=p.classList.toggle('on');b.setAttribute('aria-expanded',on)});
+ p.addEventListener('click',function(e){if(e.target.closest('a')){p.classList.remove('on');b.setAttribute('aria-expanded','false')}});
+ // zakładki i przewijanie kart
+ var zak=document.querySelectorAll('.zak'),wst=document.querySelector('.wstecz'),dal=document.querySelector('.dalej');
+ function tor(){return document.querySelector('.tor:not([hidden])')}
+ function stan(){var t=tor();if(!wst)return;wst.disabled=t.scrollLeft<4;dal.disabled=t.scrollLeft+t.clientWidth>=t.scrollWidth-4}
+ zak.forEach(function(z){z.addEventListener('click',function(){zak.forEach(function(x){x.setAttribute('aria-selected',x===z);document.getElementById(x.getAttribute('aria-controls')).hidden=x!==z});stan()})});
+ function krok(d){var t=tor(),k=t.querySelector('.karta');t.scrollBy({left:d*(k.offsetWidth+18),behavior:'smooth'})}
+ wst.addEventListener('click',function(){krok(-1)});dal.addEventListener('click',function(){krok(1)});
+ document.querySelectorAll('.tor').forEach(function(t){
+  t.addEventListener('scroll',stan,{passive:true});
+  var x0,s0,ruch=false,wcis=false;
+  t.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;wcis=true;ruch=false;x0=e.clientX;s0=t.scrollLeft});
+  window.addEventListener('pointermove',function(e){if(!wcis)return;var d=e.clientX-x0;if(Math.abs(d)>5){ruch=true;t.classList.add('ciag')}if(ruch)t.scrollLeft=s0-d});
+  window.addEventListener('pointerup',function(){if(!wcis)return;wcis=false;t.classList.remove('ciag');if(ruch){var k=t.querySelector('.karta'),w=k.offsetWidth+18;t.scrollTo({left:Math.round(t.scrollLeft/w)*w,behavior:'smooth'})}});
+  t.addEventListener('click',function(e){if(ruch){e.preventDefault();e.stopPropagation();ruch=false}},true);
+ });
+ stan();
+ document.getElementById('f-zdj').addEventListener('change',function(){document.getElementById('f-zdj-n').textContent=this.files[0]?this.files[0].name:'nie wybrano pliku'});
+ // formularz pokazowy
+ document.getElementById('form-skup').addEventListener('submit',function(e){e.preventDefault();this.querySelector('.ok').classList.add('on')});
+ // mapa po przewinięciu
+ var m=document.getElementById('mapa');
+ new IntersectionObserver(function(w,o){if(w[0].isIntersecting){var f=document.createElement('iframe');f.src=m.dataset.src;f.title='Mapa dojazdu: UTH Poland, Towarowa 29, Jasło';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';m.appendChild(f);o.disconnect()}},{rootMargin:'300px'}).observe(m);
+ // aktywna pozycja menu
+ var linki=document.querySelectorAll('.menu a[href^="#"]:not(.lang)');
+ var obs=new IntersectionObserver(function(w){w.forEach(function(x){if(x.isIntersecting){linki.forEach(function(a){a.classList.toggle('akt',a.getAttribute('href')==='#'+x.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+ ['maszyny','firma','skup','kontakt'].forEach(function(id){obs.observe(document.getElementById(id))});
+})();
+</script>
+</body>
+</html>
